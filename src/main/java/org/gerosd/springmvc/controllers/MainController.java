@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
     @GetMapping("/")
     public String index() {
-        return "index";
+        return "/WEB-INF/views/index.html";
     }
 
     @GetMapping("/hello")
     public String sayHello() {
-        return "hello_world";
+        return "/WEB-INF/views/hello_world.html";
     }
 
 }
