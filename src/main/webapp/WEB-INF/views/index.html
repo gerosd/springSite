@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>Welcome to my first site</title>
     <link rel="stylesheet" type="text/css" href="/css/mainStyle.css">
-    <script src="/js/scriptForOpenHelloPage.js"> openPage() </script>
+    <!--    <script src="/js/scriptForOpenHelloPage.js"> openPage() </script>-->
 </head>
 <body>
-    <button class="button" type="button" onclick="openPage()">На другую страницу</button>
+<a href="hello">Перейти на другую страницу</a>
+<!--    <button class="button" type="button" onclick="openPage()">На другую страницу</button>-->
+<p th:text="${message}"></p>
 </body>
 </html>
