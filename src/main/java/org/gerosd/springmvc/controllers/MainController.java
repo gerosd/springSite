@@ -13,7 +13,7 @@ public class MainController {
 
         model.addAttribute("message", "Hello, " + name + " " + surname);
 
-        return "index.html";
+        return "startPage.html";
     }
 
     @ExceptionHandler
