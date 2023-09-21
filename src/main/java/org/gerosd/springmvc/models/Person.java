@@ -23,10 +23,7 @@ public class Person {
     @Min(value = 0, message = "Age should be greater than 0.")
     private int age;
 
-    public Person(int id, int age, String name, String email) {
-        this.id = id;
-        this.age = age;
-        this.email = email;
-        this.name = name;
+    public Person() {
+
     }
 }
